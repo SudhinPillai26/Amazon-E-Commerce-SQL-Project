@@ -168,7 +168,7 @@ ON sales.product_id = products.product_id
 Where sales.order_status = 'Completed' and products.category = 'Accessories'
 ORDER BY 1 ASC;
 ```
-9. `Show the order details of customers who have paid for their orders, excluding those who have cancelled their orders.'
+9. `Show the order details of customers who have paid for their orders, excluding those who have cancelled their orders.`
 ```sql
 select
 	*
