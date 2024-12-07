@@ -614,4 +614,4 @@ functions. They do not represent real data associated with Amazon or any other e
 project is solely for learning and educational purposes, and any resemblance to actual persons,
 businesses, or events is purely coincidental.
 
-![ERD Placeholder](![Amazon_SQL_Project_ERD_Diagram](https://github.com/user-attachments/assets/1d77c107-be1d-41f3-86ac-f2d86b2b857d))
+![ERD Placeholder](https://github.com/user-attachments/assets/1d77c107-be1d-41f3-86ac-f2d86b2b857d)
