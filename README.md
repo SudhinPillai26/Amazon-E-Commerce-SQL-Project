@@ -1,8 +1,8 @@
-# Flipkart E-commerce SQL Project
+# Amazon E-commerce SQL Project
 
-![Project Banner Placeholder](https://github.com/najirh/Flipkart--SQL-Project-B01/blob/main/flipkart.jpg)
+![Project Banner Placeholder](https://github.com/najirh/Amazon--SQL-Project-B01/blob/main/Amazon.jpg)
 
-Welcome to my SQL project, where I analyze real-time data from **Flipkart**! This project uses a dataset of **20,000+ sales records** and additional tables for payments, products, and shipping data to explore and analyze e-commerce transactions, product sales, and customer interactions. The project aims to solve business problems through SQL queries, helping Flipkart make informed decisions.
+Welcome to my SQL project, where I analyze real-time data from **Amazon**! This project uses a dataset of **20,000+ sales records** and additional tables for payments, products, and shipping data to explore and analyze e-commerce transactions, product sales, and customer interactions. The project aims to solve business problems through SQL queries, helping Amazon make informed decisions.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -18,7 +18,7 @@ Welcome to my SQL project, where I analyze real-time data from **Flipkart**! Thi
 
 ## Introduction
 
-This project demonstrates essential SQL skills by analyzing e-commerce data from **Flipkart**, focusing on sales, payments, products, and customer data. Through SQL, we answer critical business questions, uncover trends, and derive actionable insights that help improve business strategies and customer experiences. The project covers different SQL techniques including **Joins**, **Group By**, **Aggregations**, and **Date Functions**.
+This project demonstrates essential SQL skills by analyzing e-commerce data from **Amazon**, focusing on sales, payments, products, and customer data. Through SQL, we answer critical business questions, uncover trends, and derive actionable insights that help improve business strategies and customer experiences. The project covers different SQL techniques including **Joins**, **Group By**, **Aggregations**, and **Date Functions**.
 
 ## Project Structure
 
@@ -103,7 +103,7 @@ The `queries.sql` file contains all SQL queries developed for this project. Each
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/flipkart-sql-project.git
+   git clone https://github.com/yourusername/Amazon-sql-project.git
    ```
 2. **Set Up the Database**:
    - Run the `schema.sql` script to set up tables and insert sample data.
@@ -143,4 +143,4 @@ functions. They do not represent real data associated with Amazon or any other e
 project is solely for learning and educational purposes, and any resemblance to actual persons,
 businesses, or events is purely coincidental.
 
-![ERD Placeholder](https://github.com/najirh/Flipkart--SQL-Project-B01/blob/main/Flipkart%20Project%20Schemas.png)
+![ERD Placeholder](https://github.com/najirh/Amazon--SQL-Project-B01/blob/main/Amazon%20Project%20Schemas.png)
