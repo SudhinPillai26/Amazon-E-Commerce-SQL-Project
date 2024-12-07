@@ -73,11 +73,68 @@ Here’s an overview of the database structure:
 The following queries were created to solve specific business questions. Each query is designed to provide insights based on sales, payments, products, and customer data.
 
 ### Easy 
-1. `Add your questions here`
-2. `Add your questions here`
-3. `Add your questions here`
-4. `Add your questions here`
-5. `Add your questions here`
+1. `Retrieve a list of all customers with the corresponding product names they ordered.`
+```sql
+select 
+	customers.customer_name,
+	products.product_name
+from customers
+Inner JOIN sales
+ON sales.customer_id = customers.customer_id
+Inner JOIN products
+ON sales.product_id = products.product_id
+Order By 1 ASC;
+```
+2. `List all products and show the details of customers who have placed orders for them. Include products that have no orders.`
+```sql
+select 
+	products.product_name as Product,
+	customers.customer_name as Customer
+from products
+LEFT JOIN sales
+ON products.product_id = sales.product_id
+LEFT JOIN customers
+ON customers.customer_id = sales.customer_id
+GROUP BY 1, 2
+ORDER BY 1 ASC;
+```
+3. `List all orders and their shipping status. Include orders that do not have any shipping records.`
+```sql
+select 
+	sales.order_id,
+	sales.order_date,
+	sales.order_status,
+	shippings.shipping_date,
+	shippings.shipping_providers,
+	shippings.delivery_status
+from sales
+LEFT JOIN shippings
+ON sales.order_id = shippings.order_id;
+```
+
+4. `Retrieve all products, including those with no orders, along with their price.`
+```sql
+select 
+	products.product_name,
+	products.price,
+	sales.price_per_unit
+from sales
+RIGHT JOIN products
+ON sales.product_id = products.product_id;
+```
+5. `Get a list of all customers who have placed orders, including those with no payment records.`
+```sql
+select 
+	Distinct(customers.customer_id),
+	customers.customer_name,
+	sales.order_id,
+	payments.payment_id
+from customers
+LEFT JOIN sales
+ON customers.customer_id = sales.customer_id
+LEFT JOIN payments
+ON payments.order_id = sales.order_id;
+```
    
 ### Medium to Hard
 1. `Add your questions here`
