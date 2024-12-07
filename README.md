@@ -135,6 +135,65 @@ ON customers.customer_id = sales.customer_id
 LEFT JOIN payments
 ON payments.order_id = sales.order_id;
 ```
+6. `Find the total number of completed orders made by customers from the state 'Delhi'.`
+```sql
+select 
+	COUNT(*) as total_number_of_completed_orders
+from customers
+INNER JOIN sales
+ON customers.customer_id = sales.customer_id
+Where customers.state = 'Delhi' and sales.order_status = 'Completed';
+```
+7. `Retrieve a list of products ordered by customers from the state 'Karnataka' with price greater than 10,000.`
+```sql
+select 
+	products.product_name 
+FROM customers
+INNER JOIN sales
+ON customers.customer_id = sales.customer_id
+INNER JOIN products
+ON sales.product_id = products.product_id
+Where customers.state = 'Karnataka' and products.price > 10000;
+```
+8. `List all customers who have placed orders where the product category is 'Accessories' and the order status is 'Completed'.`
+```sql
+select
+	DISTINCT(customers.customer_id),
+	customers.customer_name
+FROM customers
+INNER JOIN sales
+ON customers.customer_id = sales.customer_id
+INNER JOIN products
+ON sales.product_id = products.product_id
+Where sales.order_status = 'Completed' and products.category = 'Accessories'
+ORDER BY 1 ASC;
+```
+9. `Show the order details of customers who have paid for their orders, excluding those who have cancelled their orders.'
+```sql
+select
+	*
+FROM customers
+INNER JOIN sales
+ON customers.customer_id = sales.customer_id
+INNER JOIN payments
+ON payments.order_id = sales.order_id
+WHERE sales.order_status <> 'Canceled' and payments.payment_status = 'Payment Successed';
+```
+10. `Retrieve products ordered by customers who are in the 'Gujarat' state and whose total order price is greater than 15,000`
+```sql
+select
+	customers.customer_id,
+	products.product_name,
+	sales.quantity,
+	sales.price_per_unit,
+	customers.state
+FROM customers
+INNER JOIN sales
+ON customers.customer_id = sales.customer_id
+INNER JOIN products
+ON sales.product_id = products.product_id
+Where customers.state = 'Gujarat' and (sales.quantity * sales.price_per_unit) > 15000;
+```
    
 ### Medium to Hard
 1. `Add your questions here`
