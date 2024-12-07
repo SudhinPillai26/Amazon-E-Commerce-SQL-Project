@@ -1,6 +1,6 @@
 # Amazon E-commerce SQL Project
 
-![Project Banner Placeholder]([[https://github.com/najirh/Amazon--SQL-Project-B01/blob/main/Amazon.jpg](https://th.bing.com/th/id/R.2400d3a6a33e19b22a1763b5f91c13ec?rik=fXwn3nqn%2fK2Tjw&riu=http%3a%2f%2fwww.catwalkyourself.com%2fwp-content%2fuploads%2f2016%2f05%2fAmazon.com-Logo.svg_1.png&ehk=G9QYQTL1qW%2fR%2flyn5FP9bGXxzmqZeYbvb%2by9JqKi33o%3d&risl=&pid=ImgRaw&r=0)](https://pngimg.com/uploads/amazon/amazon_PNG6.png))
+![Project Banner Placeholder](https://www.catwalkyourself.com/wp-content/uploads/2016/05/Amazon.com-Logo.svg_1.png)
 
 Welcome to my SQL project, where I analyze real-time data from **Amazon.com**! This project uses a dataset of **20,000+ sales records** and additional tables for payments, products, and shipping data to explore and analyze e-commerce transactions, product sales, and customer interactions. The project aims to solve business problems through SQL queries, helping Amazon make informed decisions.
 
