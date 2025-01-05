@@ -587,7 +587,7 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
 ---
 
 ## Questions & Feedback
-###Feel free to add your questions and code snippets below and submit them as issues for further feedback!
+Feel free to add your questions and code snippets below and submit them as issues for further feedback!
 ---
 
 ## Contact Me
