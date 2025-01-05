@@ -587,7 +587,7 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
 ---
 
 ## Questions & Feedback
-Feel free to add your questions and code snippets below and submit them as issues for further feedback!
+###Feel free to add your questions and code snippets below and submit them as issues for further feedback!
 ---
 
 ## Contact Me
@@ -598,7 +598,6 @@ Feel free to add your questions and code snippets below and submit them as issue
 
 ## ERD (Entity-Relationship Diagram)
 
-## Notice:
 All customer names and data used in this project are computer-generated using AI and random
 functions. They do not represent real data associated with Amazon or any other entity. This
 project is solely for learning and educational purposes, and any resemblance to actual persons,
