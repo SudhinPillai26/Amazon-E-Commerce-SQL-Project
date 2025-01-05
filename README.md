@@ -576,7 +576,7 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/Amazon-sql-project.git
+   git clone https://github.com/SudhinPillai26/Amazon-sql-project.git
    ```
 2. **Set Up the Database**:
    - Run the `schema.sql` script to set up tables and insert sample data.
@@ -589,15 +589,6 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
 ## Questions & Feedback
 
 Feel free to add your questions and code snippets below and submit them as issues for further feedback!
-
-**Example Questions**:
-1. **Question**: How can I filter orders placed in the last 6 months?
-   **Code Snippet**:
-   ```sql
-   SELECT * FROM sales
-   WHERE order_date >= CURRENT_DATE - INTERVAL '6 months';
-   ```
-
 ---
 
 ## Contact Me
